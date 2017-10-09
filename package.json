@@ -1,6 +1,6 @@
 {
   "name": "react-pull-stream",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-invintus -i tap-spec -i browserify -i wzrd -i tape-run",
