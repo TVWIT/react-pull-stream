@@ -1,4 +1,5 @@
 var React = require('react')
+React.createClass = require('create-react-class')
 var xtend = require('xtend')
 var S = require('pull-stream/pull')
 var Pushable = require('pull-pushable')
