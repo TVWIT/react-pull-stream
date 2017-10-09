@@ -1,6 +1,6 @@
 {
   "name": "react-pull-stream",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-minlint -i tap-spec -i browserify -i wzrd -i tape-run",
@@ -11,6 +11,7 @@
     "test": "browserify test/index.js | tape-run | tap-spec"
   },
   "dependencies": {
+    "create-react-class": "^15.6.2",
     "pull-abortable": "^4.1.0",
     "pull-notify": "^0.1.1",
     "pull-pushable": "^2.0.1",
