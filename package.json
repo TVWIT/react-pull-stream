@@ -1,6 +1,11 @@
 {
   "name": "@invintus/react-pull-stream",
   "version": "3.0.0",
+  "description": "Create a duplex stream from a react component.",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-minlint -i tap-spec -i browserify -i wzrd -i tape-run",
@@ -41,14 +46,9 @@
   "author": "nichoth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nichoth/react-pull-stream/issues"
+    "url": "https://github.com/TVWIT/react-pull-stream/issues"
   },
-  "homepage": "https://github.com/nichoth/react-pull-stream#readme",
-  "description": "Create a duplex stream from a react component.",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
+  "homepage": "https://github.com/TVWIT/react-pull-stream#readme",
   "keywords": [
     "react",
     "pull",
