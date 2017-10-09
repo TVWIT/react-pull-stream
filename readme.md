@@ -5,7 +5,7 @@ Create a duplex stream from a react component.
 
 ## install
 
-    $ npm install react-pull-stream
+    $ npm install @invintus/react-pull-stream
 
 
 ## example
