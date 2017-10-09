@@ -1,6 +1,11 @@
 {
-  "name": "react-pull-stream",
-  "version": "2.0.3",
+  "name": "@invintus/react-pull-stream",
+  "version": "3.0.1",
+  "description": "Create a duplex stream from a react component.",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-invintus -i tap-spec -i browserify -i wzrd -i tape-run",
@@ -19,10 +24,11 @@
     "xtend": "^4.0.1"
   },
   "peerDependencies": {
-    "react": "^15.3.2"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "browserify": "^13.1.1",
+    "create-react-class": "^15.6.2",
     "dependency-check": "^2.8.0",
     "eslint": "^4.8.0",
     "eslint-config-invintus": "^8.0.0",
@@ -34,19 +40,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tvwit/react-pull-stream.git"
+    "url": "git+https://github.com/TVWIT/react-pull-stream.git"
   },
   "author": "nichoth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tvwit/react-pull-stream/issues"
+    "url": "https://github.com/TVWIT/react-pull-stream/issues"
   },
-  "homepage": "https://github.com/tvwit/react-pull-stream#readme",
-  "description": "Create a duplex stream from a react component.",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
+  "homepage": "https://github.com/TVWIT/react-pull-stream#readme",
   "keywords": [
     "react",
     "pull",
