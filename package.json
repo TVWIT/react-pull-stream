@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-invintus -i tap-spec -i browserify -i wzrd -i tape-run",
-    "lint": "eslint .",
-    "preversion": "npm run lint && npm run deps && npm test",
+    "lint": "eslint index.js",
+    "preversion": "npm run lint && npm run deps",
     "postversion": "git push && git push --tags && npm publish",
     "dev": "wzrd example/index.js -- -dv",
     "test": "browserify test/index.js | tape-run | tap-spec"
@@ -26,10 +26,6 @@
     "dependency-check": "^2.8.0",
     "eslint": "^4.8.0",
     "eslint-config-invintus": "^8.0.0",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
     "react-dom": "^15.3.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.2",

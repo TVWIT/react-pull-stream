@@ -26,7 +26,7 @@ function ReactStream (Elmt, onEnd) {
         componentWillMount: function () {
             var self = this;
             var drain = Drain(function onEvent (ev) {
-                self.setState(ev)
+                self.setState(ev);
             });
             S( listener, drain );
         },
@@ -42,7 +42,7 @@ function ReactStream (Elmt, onEnd) {
                 []
             );
         }
-    })
+    });
 
     var abortable = Abortable();
     var drain = S(
@@ -55,7 +55,7 @@ function ReactStream (Elmt, onEnd) {
             sourceNotify.end(err);
             if (onEnd) onEnd(err);
         })
-    )
+    );
 
     return {
         source: source,
