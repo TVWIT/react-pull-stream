@@ -1,4 +1,5 @@
 var React = require('react')
+var createClass = require('create-react-class')
 var xtend = require('xtend')
 var S = require('pull-stream/pull')
 var Pushable = require('pull-pushable')
@@ -17,10 +18,11 @@ function ReactStream (Elmt, onEnd) {
     )
     source.listen = sourceNotify.listen
     source.end = pushable.end
+    source.push = pushable.push
 
     var listener = notify.listen()
 
-    var DrainElmt = React.createClass({
+    var DrainElmt = createClass({
         componentWillMount: function () {
             var self = this
             var drain = Drain(function onEvent (ev) {
@@ -33,10 +35,15 @@ function ReactStream (Elmt, onEnd) {
         },
 
         render: function () {
-            var props = xtend(this.props, this.state, {
-                push: pushable.push
-            })
-            return React.createElement(Elmt, props, null)
+            return React.createElement(
+                Elmt,
+                xtend(
+                    this.props,
+                    this.state,
+                    { push: pushable.push }
+                ),
+                []
+            )
         }
     })
 
@@ -62,4 +69,3 @@ function ReactStream (Elmt, onEnd) {
 }
 
 module.exports = ReactStream
-
