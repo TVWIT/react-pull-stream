@@ -1,6 +1,6 @@
 {
   "name": "@invintus/react-pull-stream",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-minlint -i tap-spec -i browserify -i wzrd -i tape-run",
@@ -19,7 +19,7 @@
     "xtend": "^4.0.1"
   },
   "peerDependencies": {
-    "react": "^15.3.2"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "browserify": "^13.1.1",
