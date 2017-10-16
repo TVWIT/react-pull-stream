@@ -18,6 +18,7 @@ function ReactStream (Elmt, onEnd) {
     )
     source.listen = sourceNotify.listen
     source.end = pushable.end
+    source.push = pushable.push
 
     var listener = notify.listen()
 
