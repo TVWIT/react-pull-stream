@@ -1,6 +1,6 @@
 {
   "name": "@invintus/react-pull-stream",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Create a duplex stream from a react component.",
   "directories": {
     "example": "example",
